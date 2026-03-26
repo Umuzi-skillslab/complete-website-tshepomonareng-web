@@ -1,30 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>About</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <title>About</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    <div class="header">
-        <h1>About Me</h1>
-    </div>
-    
-    <div>
-        <h2>My Background</h2>
-        <p>I have been working in web development for several years.</p>
-        
-        <h3>Skills</h3>
-        <!-- Table should be here but is missing -->
-        <p>HTML, CSS, JavaScript</p>
-    </div>
-    
-    <div>
-        <h3>My Photo</h3>
-        <img src="images/profile.jpg">
-    </div>
-    
-    <div class="footer">
-        <p>Contact me at email@example.com</p>
-    </div>
+
+<header class="header">
+  <h1>About Me</h1>
+
+  <nav>
+    <ul class="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<section class="intro">
+  <h2>Background</h2>
+  <p>I am a web developer passionate about clean design.</p>
+</section>
+
+<section>
+  <h2>Skills Table</h2>
+
+  <table>
+    <caption>My Skills</caption>
+
+    <thead>
+      <tr>
+        <th>Skill</th>
+        <th>Category</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr><td>HTML</td><td>Markup</td></tr>
+      <tr><td>CSS</td><td>Styling</td></tr>
+      <tr><td>JavaScript</td><td>Programming</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2>Profile</h2>
+
+  <figure>
+    <img src="images/profile.jpg" alt="Portrait of Tshepo Monareng" width="300">
+    <figcaption>Web Developer</figcaption>
+  </figure>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p>Email: <a href="mailto:tshepo.monareng@umuzi.org">tshepo.monareng@umuzi.org</a></p>
+</footer>
+
 </body>
 </html>

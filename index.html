@@ -1,28 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    <div class="header">
-        <h1>My Portfolio</h1>
-        <!-- Navigation missing -->
-    </div>
-    
-    <div class="hero">
-        <h2>Welcome to My Portfolio</h2>
-        <p>I am a web developer passionate about creating beautiful websites.</p>
-        <img src="images/hero.jpg">
-    </div>
-    
-    <div class="intro">
-        <h2>About Me</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-    
-    <div class="footer">
-        <p>Contact me at email@example.com</p>
-    </div>
+
+<header class="header">
+  <h1>My Portfolio</h1>
+
+  <nav>
+    <ul class="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero">
+  <h2>Welcome</h2>
+  <p>I build modern, responsive websites.</p>
+
+  <img src="images/hero.jpg" alt="Developer workspace with laptop and code" loading="lazy">
+
+  <div class="hero-actions">
+    <a href="projects.html" class="btn-primary">View Projects</a>
+    <a href="contact.html" class="btn-secondary">Contact Me</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p>&copy; 2026 Tshepo Monareng</p>
+</footer>
+
 </body>
 </html>

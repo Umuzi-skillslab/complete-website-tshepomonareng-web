@@ -1,30 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Contact</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    <div class="header">
-        <h1>Contact Me</h1>
-    </div>
-    
-    <div>
-        <h2>Get In Touch</h2>
-        
-        <form>
-            <input type="text" placeholder="Name">
-            <input type="text" placeholder="Email">
-            <textarea placeholder="Message"></textarea>
-            
-            <!-- Missing: labels, more input types, validation -->
-            
-            <button>Send</button>
-        </form>
-    </div>
-    
-    <div class="footer">
-        <p>Contact me at email@example.com</p>
-    </div>
+
+<header class="header">
+  <h1>Contact</h1>
+
+  <nav>
+    <ul class="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<section>
+  <h2>Contact Form</h2>
+
+  <form>
+
+    <label for="name">Name</label>
+    <input type="text" id="name" required minlength="2">
+
+    <label for="email">Email</label>
+    <input type="email" id="email" required>
+
+    <label for="subject">Subject</label>
+    <select id="subject">
+      <option>General</option>
+      <option>Project</option>
+    </select>
+
+    <label>Contact Method</label>
+    <input type="radio" name="method"> Email
+    <input type="radio" name="method"> Phone
+
+    <label for="message">Message</label>
+    <textarea id="message" required></textarea>
+
+    <label>
+      <input type="checkbox" required> Accept terms
+    </label>
+
+    <button type="submit">Send</button>
+
+  </form>
+
+</section>
+
+</main>
+
+<footer class="footer">
+  <p>Email: <a href="mailto:tshepo.monareng@umuzi.org">tshepo.monareng@umuzi.org</a></p>
+</footer>
+
 </body>
 </html>
