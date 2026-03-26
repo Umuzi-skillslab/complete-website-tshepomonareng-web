@@ -14,23 +14,59 @@ This is the starter codebase for your portfolio website project. The code is app
 ## Your Task
 
 Review the provided code carefully and:
-1. Identify and fix all errors
-2. Complete all missing requirements
-3. Improve the code quality
-4. Test your website thoroughly
+# Portfolio Website
 
-## Getting Started
+## Overview
 
-1. Review all HTML and CSS files
-2. Run your HTML through the W3C Validator
-3. Run your CSS through the W3C CSS Validator
-4. Test your website in multiple browsers
-5. Fix issues and complete missing elements
+This project is a personal portfolio website created to showcase my skills, projects, and contact information. It includes four pages: Home, About, Projects, and Contact.
 
-## Notes
+## Issues Found
 
-- You will need to add your own images to the `images/` folder
-- The starter code intentionally has issues for you to discover and fix
-- Refer to the project requirements document for all specifications
+* Missing semantic HTML elements (used divs instead)
+* No proper navigation structure
+* Missing alt text on images
+* Incomplete form with missing labels
+* Poor CSS styling and no layout consistency
+* No table structure on About page
+* Duplicate HTML structure in homepage
 
-Good luck!
+## Fixes Implemented
+
+* Replaced divs with semantic elements (header, nav, main, section, footer)
+* Created consistent navigation across all pages
+* Added alt text to all images
+* Built a complete contact form with validation
+* Added a structured table to About page
+* Fixed HTML errors and ensured valid structure
+* Improved CSS styling and layout
+
+## HTML Structure
+
+Each page uses semantic HTML5 elements for accessibility and structure. Sections are logically grouped and content is clearly organised.
+
+## CSS Styling
+
+Used multiple selector types including:
+
+* Element selectors
+* Class selectors
+* ID selectors
+* Descendant selectors
+* Pseudo-classes (:hover, :focus)
+
+Applied box model properties (margin, padding, border) and improved layout using flexbox.
+
+## Accessibility Improvements
+
+* Added labels to all form inputs
+* Included descriptive alt text for images
+* Improved colour contrast
+* Used semantic HTML elements
+
+## How to Run
+
+Open index.html in any web browser.
+
+## Reflection
+
+One of the main challenges was identifying and fixing structural HTML issues. I solved this by carefully reviewing each page and ensuring consistency. Improving CSS layout and navigation was also challenging but helped me better understand responsive design.
