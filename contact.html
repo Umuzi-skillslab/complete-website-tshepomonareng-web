@@ -2,66 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Tshepo Monareng</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
 
 <header class="header">
   <h1>Contact</h1>
-
   <nav>
     <ul class="nav-menu">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
     </ul>
   </nav>
 </header>
 
 <main>
+  <section>
+    <form action="#" method="POST">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
 
-<section>
-  <h2>Contact Form</h2>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
 
-  <form>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
 
-    <label for="name">Name</label>
-    <input type="text" id="name" required minlength="2">
-
-    <label for="email">Email</label>
-    <input type="email" id="email" required>
-
-    <label for="subject">Subject</label>
-    <select id="subject">
-      <option>General</option>
-      <option>Project</option>
-    </select>
-
-    <label>Contact Method</label>
-    <input type="radio" name="method"> Email
-    <input type="radio" name="method"> Phone
-
-    <label for="message">Message</label>
-    <textarea id="message" required></textarea>
-
-    <label>
-      <input type="checkbox" required> Accept terms
-    </label>
-
-    <button type="submit">Send</button>
-
-  </form>
-
-</section>
-
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
 </main>
 
 <footer class="footer">
-  <p>Email: <a href="mailto:tshepo.monareng@umuzi.org">tshepo.monareng@umuzi.org</a></p>
+  <p>&copy; 2026 Tshepo Monareng</p>
 </footer>
 
+<script src="js/main.js"></script>
 </body>
 </html>
