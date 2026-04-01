@@ -3,15 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home | Portfolio</title>
+  <title>Home | Tshepo Monareng — Web Developer</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
 <header class="header">
-  <h1>My Portfolio</h1>
-
+  <h1>Tshepo.dev</h1>
   <nav>
     <ul class="nav-menu">
       <li><a href="index.html">Home</a></li>
@@ -24,22 +23,260 @@
 
 <main>
 
-<section class="hero">
-  <h2>Welcome</h2>
-  <p>I build modern, responsive websites.</p>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <p class="hero-label">// Available for work</p>
+      <h2>Building <em>fast,</em> modern web experiences</h2>
+      <p>I'm Tshepo Monareng — a web developer crafting responsive, accessible, and performant websites that help businesses grow.</p>
+      <div class="hero-actions">
+        <a href="projects.html" class="btn-primary">View Projects</a>
+        <a href="contact.html" class="btn-secondary">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-image-wrap">
+      <img src="images/hero.jpg" alt="Developer workspace with laptop and code" loading="lazy">
+    </div>
+  </section>
 
-  <img src="images/hero.jpg" alt="Developer workspace with laptop and code" loading="lazy">
-
-  <div class="hero-actions">
-    <a href="projects.html" class="btn-primary">View Projects</a>
-    <a href="contact.html" class="btn-secondary">Contact Me</a>
+  <!-- STATS -->
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-number">40+</div>
+      <div class="stat-label">Projects delivered</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number">3+</div>
+      <div class="stat-label">Years experience</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number">98%</div>
+      <div class="stat-label">Client satisfaction</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number">20+</div>
+      <div class="stat-label">Happy clients</div>
+    </div>
   </div>
-</section>
+
+  <!-- SKILLS -->
+  <section class="skills-section">
+    <p class="section-label">// What I do</p>
+    <h2 class="section-title">Skills &amp; Expertise</h2>
+    <div class="skills-grid">
+
+      <div class="skill-card">
+        <div class="skill-icon">⚡</div>
+        <h3>Frontend Development</h3>
+        <p>Building pixel-perfect, responsive interfaces with clean, maintainable code and smooth interactions.</p>
+        <div class="skill-tags">
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">React</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">🛠</div>
+        <h3>Backend &amp; APIs</h3>
+        <p>Developing robust server-side logic and RESTful APIs that power modern web applications.</p>
+        <div class="skill-tags">
+          <span class="tag">Node.js</span>
+          <span class="tag">Express</span>
+          <span class="tag">REST APIs</span>
+          <span class="tag">SQL</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">📐</div>
+        <h3>UI/UX Design</h3>
+        <p>Translating ideas into intuitive, accessible user interfaces with a strong eye for detail.</p>
+        <div class="skill-tags">
+          <span class="tag">Figma</span>
+          <span class="tag">Wireframing</span>
+          <span class="tag">Prototyping</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">🚀</div>
+        <h3>Performance &amp; SEO</h3>
+        <p>Optimising load times, Core Web Vitals, and search rankings so your site gets found and keeps users.</p>
+        <div class="skill-tags">
+          <span class="tag">Lighthouse</span>
+          <span class="tag">SEO</span>
+          <span class="tag">Web Vitals</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">☁️</div>
+        <h3>Deployment &amp; DevOps</h3>
+        <p>From local dev to live production — CI/CD pipelines, hosting, and version control workflows.</p>
+        <div class="skill-tags">
+          <span class="tag">Git</span>
+          <span class="tag">Vercel</span>
+          <span class="tag">Netlify</span>
+          <span class="tag">Docker</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">📱</div>
+        <h3>Responsive &amp; Accessible</h3>
+        <p>Every site I build works beautifully across all screen sizes and meets WCAG accessibility standards.</p>
+        <div class="skill-tags">
+          <span class="tag">Mobile-first</span>
+          <span class="tag">WCAG 2.1</span>
+          <span class="tag">ARIA</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FEATURED PROJECTS -->
+  <section class="projects-section">
+    <p class="section-label">// Selected work</p>
+    <h2 class="section-title">Featured Projects</h2>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="project-thumb">🛒</div>
+        <div class="project-body">
+          <p class="project-type">E-Commerce</p>
+          <h3>ShopLocal SA</h3>
+          <p>A full-stack e-commerce platform for South African small businesses, built with React and Node.js, featuring mobile payments and inventory management.</p>
+          <div class="project-links">
+            <a href="projects.html" class="project-link">Case study →</a>
+            <a href="#" class="project-link">Live site ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-thumb">📊</div>
+        <div class="project-body">
+          <p class="project-type">Dashboard</p>
+          <h3>DataPulse Analytics</h3>
+          <p>A real-time analytics dashboard with interactive charts, role-based access, and dark-mode support for a fintech startup.</p>
+          <div class="project-links">
+            <a href="projects.html" class="project-link">Case study →</a>
+            <a href="#" class="project-link">Live site ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-thumb">🏥</div>
+        <div class="project-body">
+          <p class="project-type">Web App</p>
+          <h3>MedBook Clinic Portal</h3>
+          <p>An appointment booking web app for a medical practice, with SMS reminders, patient records, and POPIA-compliant data handling.</p>
+          <div class="project-links">
+            <a href="projects.html" class="project-link">Case study →</a>
+            <a href="#" class="project-link">Live site ↗</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process-section">
+    <p class="section-label">// How I work</p>
+    <h2 class="section-title">My Process</h2>
+    <div class="process-steps">
+
+      <div class="step">
+        <p class="step-number">01 —</p>
+        <h3>Discover</h3>
+        <p>I start by understanding your goals, audience, and constraints through a detailed discovery call.</p>
+      </div>
+
+      <div class="step">
+        <p class="step-number">02 —</p>
+        <h3>Design</h3>
+        <p>Wireframes and high-fidelity prototypes in Figma before a single line of code is written.</p>
+      </div>
+
+      <div class="step">
+        <p class="step-number">03 —</p>
+        <h3>Build</h3>
+        <p>Clean, semantic code with continuous feedback loops and weekly progress check-ins.</p>
+      </div>
+
+      <div class="step">
+        <p class="step-number">04 —</p>
+        <h3>Launch</h3>
+        <p>Thorough testing, performance audit, and smooth deployment — then ongoing support.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials-section">
+    <p class="section-label">// Kind words</p>
+    <h2 class="section-title">What Clients Say</h2>
+    <div class="testimonials-grid">
+
+      <div class="testimonial">
+        <blockquote>"Tshepo completely transformed our online presence. The new site loads in under 2 seconds and our leads doubled within the first month."</blockquote>
+        <div class="testimonial-author">
+          <div class="author-avatar">👩🏽</div>
+          <div>
+            <span class="author-name">Naledi Dlamini</span>
+            <span class="author-role">CEO, Dlamini &amp; Associates</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial">
+        <blockquote>"Exceptional attention to detail and communication throughout. He delivered exactly what we needed, on time and on budget."</blockquote>
+        <div class="testimonial-author">
+          <div class="author-avatar">👨🏾</div>
+          <div>
+            <span class="author-name">Sipho Khumalo</span>
+            <span class="author-role">Founder, FinEdge Tech</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial">
+        <blockquote>"The booking system he built saves our admin team hours every week. Clean, intuitive, and rock-solid reliable."</blockquote>
+        <div class="testimonial-author">
+          <div class="author-avatar">👩🏾</div>
+          <div>
+            <span class="author-name">Dr. Zanele Mokoena</span>
+            <span class="author-role">Practice Manager, MedBook Clinic</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <p class="section-label">// Let's build something</p>
+    <h2>Got a project in mind?</h2>
+    <p>I'm currently taking on new clients. Let's talk about what you need.</p>
+    <a href="contact.html" class="btn-primary">Start a Conversation</a>
+  </section>
 
 </main>
 
 <footer class="footer">
   <p>&copy; 2026 Tshepo Monareng</p>
+  <div class="footer-links">
+    <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter / X</a>
+  </div>
 </footer>
 
 </body>
