@@ -1,30 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Projects</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Tshepo Monareng</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="header">
-        <h1>My Projects</h1>
+
+<header class="header">
+  <h1>Projects</h1>
+  <nav>
+    <ul class="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="projects-section">
+    <p class="section-label">// Selected work</p>
+    <h2 class="section-title">Featured Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-thumb">🛒</div>
+        <div class="project-body">
+          <p class="project-type">E-Commerce</p>
+          <h3>ShopLocal SA</h3>
+          <p>A full-stack e-commerce platform for South African small businesses.</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-thumb">📊</div>
+        <div class="project-body">
+          <p class="project-type">Dashboard</p>
+          <h3>DataPulse Analytics</h3>
+          <p>Real-time analytics dashboard with interactive charts and dark-mode support.</p>
+        </div>
+      </div>
     </div>
-    
-    <div>
-        <h2>Project 1</h2>
-        <img src="images/project1.jpg">
-        <p>A responsive website built with HTML and CSS.</p>
-    </div>
-    
-    <div>
-        <h2>Project 2</h2>
-        <img src="images/project2.jpg">
-        <p>An e-commerce site with modern design.</p>
-    </div>
-    
-    <!-- Third project missing -->
-    
-    <div class="footer">
-        <p>Contact me at email@example.com</p>
-    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>&copy; 2026 Tshepo Monareng</p>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>

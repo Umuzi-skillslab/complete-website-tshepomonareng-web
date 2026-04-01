@@ -1,28 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Tshepo Monareng — Web Developer</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="header">
-        <h1>My Portfolio</h1>
-        <!-- Navigation missing -->
+
+<header class="header">
+  <h1>Tshepo.dev</h1>
+  <nav>
+    <ul class="nav-menu">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <p class="hero-label">// Available for work</p>
+      <h2>Building <em>fast,</em> modern web experiences</h2>
+      <p>I'm Tshepo Monareng — a web developer crafting responsive, accessible, and performant websites.</p>
+      <div class="hero-actions">
+        <a href="projects.html" class="btn-primary">View Projects</a>
+        <a href="contact.html" class="btn-secondary">Get in Touch</a>
+      </div>
     </div>
-    
-    <div class="hero">
-        <h2>Welcome to My Portfolio</h2>
-        <p>I am a web developer passionate about creating beautiful websites.</p>
-        <img src="images/hero.jpg">
+    <div class="hero-image-wrap">
+      <img src="images/hero.jpg" alt="Developer workspace with laptop and code">
     </div>
-    
-    <div class="intro">
-        <h2>About Me</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-number">40+</div>
+      <div class="stat-label">Projects delivered</div>
     </div>
-    
-    <div class="footer">
-        <p>Contact me at email@example.com</p>
+    <div class="stat">
+      <div class="stat-number">3+</div>
+      <div class="stat-label">Years experience</div>
     </div>
+    <div class="stat">
+      <div class="stat-number">98%</div>
+      <div class="stat-label">Client satisfaction</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number">20+</div>
+      <div class="stat-label">Happy clients</div>
+    </div>
+  </div>
+
+  <!-- SKILLS -->
+  <section class="skills-section">
+    <p class="section-label">// What I do</p>
+    <h2 class="section-title">Skills &amp; Expertise</h2>
+    <div class="skills-grid">
+      <!-- Skill cards same as your CSS structure -->
+      <div class="skill-card">
+        <div class="skill-icon">⚡</div>
+        <h3>Frontend Development</h3>
+        <p>Building responsive, interactive interfaces.</p>
+        <div class="skill-tags">
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">React</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">🛠</div>
+        <h3>Backend & APIs</h3>
+        <p>Server-side logic & RESTful APIs.</p>
+        <div class="skill-tags">
+          <span class="tag">Node.js</span>
+          <span class="tag">Express</span>
+          <span class="tag">REST</span>
+          <span class="tag">SQL</span>
+        </div>
+      </div>
+      <!-- Add more skill-cards as needed -->
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>&copy; 2026 Tshepo Monareng</p>
+  <div class="footer-links">
+    <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>
