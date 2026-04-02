@@ -10,7 +10,7 @@
   --radius: 10px;
   --container: 1100px;
   --shadow: 0 2px 6px rgba(0,0,0,.08);
-  --focus: 4px; /* focus outline size for accessibility */
+  --focus: 4px;
 }
 
 html { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
@@ -29,7 +29,7 @@ body {
 }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
 
-/* 3. Header / Navigation (semantic) */
+/* 3. Header / Navigation */
 .site-header {
   background: #fff;
   border-bottom: 1px solid #e5e5e5;
@@ -49,7 +49,6 @@ body {
   text-decoration: none;
   font-size: 1.15rem;
 }
-.main-nav { /* semantic nav container */ }
 .nav-list {
   list-style: none;
   display: flex;
@@ -69,13 +68,34 @@ body {
   font-weight: 600;
 }
 
-/* 4. Main content areas */
+/* 4. Hero - full-width background image */
 .hero {
-  padding: 60px 0 40px;
-  text-align: center;
+  display: block;
+  padding: 0;
+  margin: 0 calc((100vw - min(1100px, 92%)) / -2);
 }
-.hero h1 { font-size: 2.4rem; margin-bottom: 8px; }
-.hero .tagline { color: var(--muted); margin-bottom: 16px; }
+.hero-bg {
+  background-size: cover;
+  background-position: center top;
+  position: relative;
+  min-height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-text {
+  position: relative;
+  z-index: 1;
+  padding: 40px;
+  color: #fff;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.hero-text h1 { color: #fff; font-size: 2.4rem; margin-bottom: 8px; }
+.hero-text .tagline { color: rgba(255,255,255,0.85); margin-bottom: 16px; }
+
+/* 5. Button */
 .btn {
   display: inline-block;
   background: var(--brand);
@@ -87,12 +107,26 @@ body {
 }
 .btn:hover { background: #1e4a8f; transform: translateY(-1px); }
 
-/* Sections spacing */
+/* 6. Sections spacing */
 .section { padding: 40px 0; }
-.about { padding: 40px 0; }
 .projects-section { padding: 40px 0; }
 
-/* 5. Project grid with box model demonstration */
+/* 7. About section */
+.about {
+  padding: 40px 0;
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+.about-photo {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* 8. Project grid */
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -116,7 +150,7 @@ body {
 }
 .project-card h3 { font-size: 1.05rem; margin: 6px 0; }
 
-/* 6. Tables (accessible, styled) */
+/* 9. Tables */
 .stats-table {
   width: 100%;
   border-collapse: collapse;
@@ -134,7 +168,7 @@ body {
 }
 .stats-table tbody tr:nth-child(odd) { background: #fafafa; }
 
-/* 7. Contact form styling + accessibility */
+/* 10. Contact form */
 .contact-form {
   display: grid;
   grid-template-columns: 1fr;
@@ -164,8 +198,6 @@ textarea {
   font: inherit;
 }
 textarea { resize: vertical; min-height: 120px; }
-
-/* Radio group */
 .radio-group {
   display: flex;
   gap: 12px;
@@ -179,7 +211,7 @@ textarea { resize: vertical; min-height: 120px; }
   color: var(--fg);
 }
 
-/* 8. Footer alignment and base typography */
+/* 11. Footer */
 .site-footer {
   padding: 24px 0;
   text-align: center;
@@ -189,35 +221,23 @@ textarea { resize: vertical; min-height: 120px; }
   margin-top: 40px;
 }
 
-/* 9. Accessibility helpers */
+/* 12. Accessibility */
 @media (prefers-reduced-motion: reduce) {
   .btn { transition: none; }
   .project-card { transition: none; }
 }
 
-/* 10. Responsive tweaks */
+/* 13. Responsive */
 @media (max-width: 900px) {
   .brand { font-size: 1.05rem; }
 }
 @media (max-width: 700px) {
-  .nav-list { display: none; } /* simple: add a toggle later for small screens */
+  .nav-list { display: none; }
   .container { width: min(90%, 92%); }
-}
-.hero { display: grid; grid-template-columns: 1fr 220px; gap: 3rem; align-items: center; }
-.hero-photo img { width: 220px; height: 260px; object-fit: cover; border-radius: 12px; }
-
-.about { display: grid; grid-template-columns: 140px 1fr; gap: 3rem; align-items: start; }
-.about-photo { width: 140px; height: 140px; object-fit: cover; border-radius: 50%; }
-.hero {
-  display: block;        /* overrides the grid we set earlier */
-  margin: 0 -4%;        /* breaks out of the container on smaller screens */
-  padding: 0;
-}
-
-@media (min-width: 700px) {
-  .hero { margin: 0 calc((100vw - min(1100px, 92%)) / -2); }
-}
-.hero-text {
-  margin: 0 auto;
-  text-align: center;
+  .hero { margin: 0; }
+  .about {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .about-photo { margin: 0 auto; }
 }
