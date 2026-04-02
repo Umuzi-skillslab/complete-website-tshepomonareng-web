@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tshepo Monareng – Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header class="site-header" aria-label="Site header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Home">Tshepo Monareng</a>
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link" aria-current="page">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" role="main">
+
+  <section class="hero" aria-labelledby="hero-title">
+  <div class="hero-bg" style="
+    background-image: url('images/hero.jpg');
+    background-size: cover;
+    background-position: center top;
+    position: relative;
+    min-height: 480px;
+    display: flex;
+    align-items: center;        /* changed: vertical center */
+    justify-content: center;    /* added: horizontal center */
+  ">
+    <div style="
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.72) 40%, rgba(0,0,0,0.15) 100%);
+    "></div>
+
+    <div class="hero-text" style="
+      position: relative;
+      z-index: 1;
+      padding: 40px;
+      color: #fff;
+      text-align: center;     /* added */
+      max-width: 600px;
+    ">
+      <h1 id="hero-title" style="color: #fff;">Hi, I'm Tshepo Monareng</h1>
+      <p class="tagline" style="color: rgba(255,255,255,0.85);">
+        Front-end developer &amp; designer &bull; I craft accessible, responsive interfaces.
+      </p>
+      <a href="contact.html" class="btn" aria-label="Contact me">Get In Touch</a>
+    </div>
+  </div>
+</section>
+
+    <section class="about" aria-labelledby="about-preview-title">
+      <img src="images/Main.png" alt="Tshepo Monareng" class="about-photo" width="140" height="140" />
+      <div class="about-text">
+        <h2 id="about-preview-title">About Me</h2>
+        <p>I'm a front-end developer based in South Africa with a passion for building clean, accessible web experiences. I work with HTML, CSS, and JavaScript to turn designs into fast, responsive interfaces. <a href="about.html">Read more →</a></p>
+      </div>
+    </section>
+
+    <section class="projects-section" aria-labelledby="projects-preview-title">
+      <h2 id="projects-preview-title">Featured Projects</h2>
+      <div class="project-grid">
+        <article class="project-card">
+          <img src="images/image 1.jpg" alt="Project One screenshot" />
+          <h3>Project One</h3>
+          <p>A responsive landing page built with semantic HTML and CSS Grid.</p>
+        </article>
+        <article class="project-card">
+          <img src="images/image 2.jpg" alt="Project Two screenshot" />
+          <h3>Project Two</h3>
+          <p>An accessible form with full keyboard navigation and validation.</p>
+        </article>
+        <article class="project-card">
+          <img src="images/image 3.jpg" alt="Project Three screenshot" />
+          <h3>Project Three</h3>
+          <p>A portfolio site with CSS animations and mobile-first layout.</p>
+        </article>
+      </div>
+      <p style="margin-top: 20px;"><a href="projects.html" class="btn">View All Projects</a></p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; 2026 Tshepo Monareng. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
