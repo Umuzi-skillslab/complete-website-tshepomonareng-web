@@ -1,39 +1,114 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/YDjuDFNG)
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=23192453&assignment_repo_type=AssignmentRepo)
-# NB: YOU'RE IN THE WRONG BRANCH PLEASE CHECK THE MASTER BRANCH
- MY WORK IS THERE
- 
-This is the starter codebase for your portfolio website project. The code is approximately 70% complete but contains errors, omissions, and areas that need improvement.
+# Tshepo Monareng – Portfolio Website
 
-## What's Included
+A fully responsive, accessible 4-page personal portfolio website built with plain HTML5 and CSS3. No frameworks, no build tools — just clean, semantic web standards.
 
-- `index.html` - Home page (incomplete)
-- `about.html` - About page (incomplete)
-- `projects.html` - Projects page (incomplete)
-- `contact.html` - Contact page (incomplete)
-- `css/styles.css` - Stylesheet (incomplete and with errors)
-- `images/` folder - Placeholder folder for your images
+---
 
-## Your Task
+## Pages
 
-Review the provided code carefully and:
-1. Identify and fix all errors
-2. Complete all missing requirements
-3. Improve the code quality
-4. Test your website thoroughly
+| Page | File | Description |
+|------|------|-------------|
+| Home | `index.html` | Hero section with background image, about preview, featured projects |
+| About | `about.html` | Bio, skills table, circular profile photo |
+| Projects | `projects.html` | 6-card project grid with images and descriptions |
+| Contact | `contact.html` | Fully accessible contact form |
 
-## Getting Started
+---
 
-1. Review all HTML and CSS files
-2. Run your HTML through the W3C Validator
-3. Run your CSS through the W3C CSS Validator
-4. Test your website in multiple browsers
-5. Fix issues and complete missing elements
+## Project Structure
 
-## Notes
+```
+portfolio/
+├── index.html
+├── about.html
+├── projects.html
+├── contact.html
+├── css/
+│   └── styles.css
+├── Images/
+│   ├── hero.jpg
+│   ├── Main.png
+│   ├── About.png
+│   ├── Project 1.jpg
+│   ├── Project2.jpg
+│   ├── Project 3.jpg
+│   ├── Project 4.jpg
+│   ├── Project 5.jpg
+│   └── Project 7.jpg
+└── README.md
+```
 
-- You will need to add your own images to the `images/` folder
-- The starter code intentionally has issues for you to discover and fix
-- Refer to the project requirements document for all specifications
+---
 
-Good luck!
+## Features
+
+- Semantic HTML5 throughout (header, nav, main, section, article, footer)
+- Fully responsive layout using CSS Grid and Flexbox
+- Mobile-friendly navigation
+- Accessible forms with proper labels, ARIA attributes, and keyboard navigation
+- Full-width hero background image with dark gradient overlay
+- Circular profile photo on About and Home pages
+- Project cards with images, descriptions, and links
+- Skills table on About page
+- sticky navigation header
+- Reduced motion support for accessibility (`prefers-reduced-motion`)
+- CSS custom properties (variables) for consistent theming
+
+---
+
+## What Was Fixed & Built
+
+Starting from a 70% complete starter codebase, the following was completed:
+
+- Fixed all duplicate and conflicting CSS rules (3 separate `.hero` blocks merged into one)
+- Corrected all image file paths to match actual filenames
+- Updated all "Your Name" placeholders to "Tshepo Monareng"
+- Fixed broken `resume.html` nav link (page didn't exist — removed)
+- Added missing pages: `about.html`, `contact.html`, `projects.html`
+- Added full CSS for hero background image, about grid, and project cards
+- Fixed footer copyright name
+- Added responsive styles for screens under 700px
+
+---
+
+## How to Run
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Umuzi-skillslab/complete-website-tshepomonareng-web.git
+   http://127.0.0.1:5500/contact.html
+   ```
+2. Open `index.html` in your browser — no server needed.
+
+Or open with VS Code Live Server:
+1. Install the **Live Server** extension in VS Code
+2. Right-click `index.html` → **Open with Live Server**
+
+---
+
+## Validation
+
+- HTML validated with [W3C Markup Validator](https://validator.w3.org/)
+- CSS validated with [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+- Tested in Chrome and Firefox
+- Accessibility checked with keyboard navigation
+
+---
+
+## Technologies Used
+
+- HTML5
+- CSS3 (Grid, Flexbox, Custom Properties)
+- Git & GitHub
+
+---
+
+## Author
+
+**Tshepo Monareng**  
+Aspiring front-end developer | Umuzi  
+[GitHub](https://github.com/Umuzi-skillslab/complete-website-tshepomonareng-web)
+
+---
+
+&copy; 2026 Tshepo Monareng. All rights reserved.
