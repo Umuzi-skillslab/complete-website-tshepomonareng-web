@@ -29,15 +29,15 @@ portfolio/
 │   ├── hero.jpg
 │   ├── Main.png
 │   ├── About.png
-│   ├── image 1.jpg
-│   ├── image 2.jpg
-│   ├── image 3.jpg
-│   ├── Project 1.jpg
+│   ├── image-1.jpg
+│   ├── image-2.jpg
+│   ├── image-3.jpg
+│   ├── Project-1.jpg
 │   ├── Project2.jpg
-│   ├── Project 3.jpg
-│   ├── Project 4.jpg
-│   ├── Project 5.jpg
-│   └── Project 7.jpg
+│   ├── Project-3.jpg
+│   ├── Project-4.jpg
+│   ├── Project-5.jpg
+│   └── Project-7.jpg
 └── README.md
 ```
 
@@ -109,9 +109,12 @@ Starting from a 70% complete starter codebase, the following was completed:
 
 #### CSS Styling & Selectors
 - Fixed nav hover contrast — changed from failing `#f0c040` on `#555555` to `#e8e8ec` on dark background (passes WCAG AA 4.5:1)
-- Added CSS pseudo-elements (`::before`) for decorative accent lines on section headings
-- Expanded selector coverage: ID selector (`#contact-form`), attribute selector (`th[scope="col"]`), `:nth-child(even)` zebra striping, `:last-child` border removal, `:focus-visible`, `:active`, `:disabled`
+- Added CSS pseudo-elements (`::before`, `::after`) for decorative accent lines on section headings and footer
+- Expanded selector coverage: ID selector (`#main-content`), attribute selector (`th[scope="col"]`), adjacent sibling (`li + li`), `:nth-child(even)` zebra striping, `:last-child` border removal, `:focus-visible`, `:focus`, `:active`, `:visited`, `:disabled`
+- Styled `.active` nav class with accent colour, background highlight, and bottom border
+- Added hero overlay (`hero-overlay`) with `position: absolute; inset: 0; background: rgba(...)` — was previously unstyled
 - Added `.btn:disabled` state with reduced opacity and `cursor: not-allowed`
+- Added `.visually-hidden` utility class (HTML used this class but CSS only had `.sr-only`)
 
 #### Layout & Responsiveness
 - Added `@media (max-width: 768px)` — stacked nav, single-column grid, column-direction about section
@@ -133,21 +136,26 @@ Starting from a 70% complete starter codebase, the following was completed:
 | 1 | All pages | Missing `<meta name="description">` | Added to all 4 pages |
 | 2 | All pages | No active state on nav links | Added `.active` + `aria-current="page"` |
 | 3 | All pages | Inline `style=""` attributes throughout | Moved to CSS classes |
-| 4 | `index.html` | Profile image not in `<figure>` | Wrapped in `<figure>` + `<figcaption>` |
-| 5 | `about.html` | Skills table missing `<caption>` | Added descriptive caption |
-| 6 | `about.html` | Profile image not in `<figure>` | Wrapped in `<figure>` + `<figcaption>` |
-| 7 | `contact.html` | No `<fieldset>` / `<legend>` grouping | Added two fieldset groups |
-| 8 | `contact.html` | Only 3 input types (text, email, textarea) | Added `date`, `tel`, `url`, `checkbox`, `select` |
-| 9 | `contact.html` | No `minlength` or `pattern` validation | Added to name, email, phone, message |
-| 10 | `contact.html` | No accessible error messages | Added `role="alert"` + `aria-live` spans |
-| 11 | `contact.html` | No `aria-required` or `aria-describedby` | Added to all required fields |
-| 12 | `contact.html` | No JS validation feedback | Added blur + submit validation script |
-| 13 | `projects.html` | Generic `alt` text on all images | Replaced with descriptive alt text |
-| 14 | `css/styles.css` | Nav hover colour fails WCAG AA contrast | Fixed to high-contrast dark theme colours |
-| 15 | `css/styles.css` | No responsive media queries | Added 768px and 480px breakpoints |
-| 16 | `css/styles.css` | No `prefers-reduced-motion` rule | Added with motion-safe fallbacks |
-| 17 | `css/styles.css` | Limited pseudo-class and selector variety | Added `::before`, `:nth-child`, `:last-child`, `[attr]` selectors |
-| 18 | `css/styles.css` | No `.visually-hidden` utility | Added for accessible hidden text |
+| 4 | All pages | Image filenames with spaces caused broken paths | Renamed to hyphenated filenames (`image-1.jpg`, `Project-1.jpg`, etc.) |
+| 5 | All pages | Missing `id="main-content"` on `<main>` | Added to all 4 pages (enables ID selector) |
+| 6 | `index.html` | Profile image not in `<figure>` | Wrapped in `<figure>` + `<figcaption>` |
+| 7 | `about.html` | Skills table missing `<caption>` | Added descriptive caption |
+| 8 | `about.html` | Profile image not in `<figure>` | Wrapped in `<figure>` + `<figcaption>` |
+| 9 | `contact.html` | No `<fieldset>` / `<legend>` grouping | Added two fieldset groups |
+| 10 | `contact.html` | Only 3 input types (text, email, textarea) | Added `date`, `tel`, `url`, `checkbox`, `select` |
+| 11 | `contact.html` | No `minlength` or `pattern` validation | Added to name, email, phone, message |
+| 12 | `contact.html` | No accessible error messages | Added `role="alert"` + `aria-live` spans |
+| 13 | `contact.html` | No `aria-required` or `aria-describedby` | Added to all required fields |
+| 14 | `contact.html` | No JS validation feedback | Added blur + submit validation script |
+| 15 | `projects.html` | Generic `alt` text on all images | Replaced with descriptive alt text |
+| 16 | `css/styles.css` | Nav hover colour fails WCAG AA contrast | Fixed to high-contrast dark theme colours |
+| 17 | `css/styles.css` | No responsive media queries | Added 768px and 480px breakpoints |
+| 18 | `css/styles.css` | No `prefers-reduced-motion` rule | Added with motion-safe fallbacks |
+| 19 | `css/styles.css` | Limited pseudo-class and selector variety | Added `::before`, `::after`, `:nth-child`, `:last-child`, `li + li`, `[attr]` selectors |
+| 20 | `css/styles.css` | No `.visually-hidden` utility | Added for accessible hidden text |
+| 21 | `css/styles.css` | Hero overlay had no CSS rule | Added `position: absolute; inset: 0; background: rgba(...)` |
+| 22 | `css/styles.css` | `.active` nav class had no styles | Added blue background + accent bottom border |
+| 23 | `css/styles.css` | No `#main-content` ID selector in CSS | Added `#main-content { outline: none; scroll-margin-top: ... }` |
 
 ---
 
