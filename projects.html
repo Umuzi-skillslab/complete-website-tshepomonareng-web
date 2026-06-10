@@ -1,30 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Projects</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse Tshepo Monareng's web development projects – from landing pages and forms to dashboards and blog templates." />
+  <title>Projects – Tshepo Monareng</title>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-    <div class="header">
-        <h1>My Projects</h1>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header" aria-label="Site header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Home">Tshepo Monareng</a>
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="projects.html" class="nav-link active" aria-current="page">Projects</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    
-    <div>
-        <h2>Project 1</h2>
-        <img src="images/project1.jpg">
-        <p>A responsive website built with HTML and CSS.</p>
+  </header>
+
+  <main class="container" role="main" id="main-content">
+
+    <section class="projects-section section" aria-labelledby="projects-title">
+      <h1 id="projects-title">Projects</h1>
+      <p class="section-intro">A selection of work I've built — from landing pages to interactive tools.</p>
+
+      <div class="project-grid">
+
+        <article class="project-card">
+          <img src="images/Project 1.jpg" alt="Responsive landing page showing a clean mobile-first layout with CSS Grid" />
+          <h3>Responsive Landing Page</h3>
+          <p>A mobile-first marketing page using CSS Grid, custom properties, and semantic HTML. Scored 98 on Lighthouse accessibility.</p>
+          <p class="card-cta">
+            <a href="#" class="btn btn-sm">View Project</a>
+          </p>
+        </article>
+
+        <article class="project-card">
+          <img src="images/Project2.jpg" alt="Accessible contact form with clear labels and error states" />
+          <h3>Accessible Contact Form</h3>
+          <p>A fully keyboard-navigable form with live validation, ARIA labels, and error messaging that meets WCAG 2.1 AA.</p>
+          <p class="card-cta">
+            <a href="#" class="btn btn-sm">View Project</a>
+          </p>
+        </article>
+
+        <article class="project-card">
+          <img src="images/Project 3.jpg" alt="Portfolio website with dark theme and animated hero section" />
+          <h3>Portfolio Site</h3>
+          <p>This portfolio — built from scratch with plain HTML &amp; CSS. No frameworks, no build tools. Fast, clean, and accessible.</p>
+          <p class="card-cta">
+            <a href="#" class="btn btn-sm">View Source</a>
+          </p>
+        </article>
+
+        <article class="project-card">
+          <img src="images/Project 4.jpg" alt="CSS animation library demo showing various transition effects" />
+          <h3>CSS Animation Library</h3>
+          <p>A small collection of reusable CSS animations with reduced-motion support baked in for accessibility.</p>
+          <p class="card-cta">
+            <a href="#" class="btn btn-sm">View Project</a>
+          </p>
+        </article>
+
+        <article class="project-card">
+          <img src="images/Project 5.jpg" alt="Dashboard UI with data tables and responsive grid layout" />
+          <h3>Dashboard UI</h3>
+          <p>A data dashboard mockup using CSS Grid and a custom table component. Fully responsive down to 320px.</p>
+          <p class="card-cta">
+            <a href="#" class="btn btn-sm">View Project</a>
+          </p>
+        </article>
+
+        <article class="project-card">
+          <img src="images/Project 7.jpg" alt="Blog template with clean typography and spacious reading layout" />
+          <h3>Blog Template</h3>
+          <p>A clean, readable blog layout with focus on typography, spacing, and long-form content legibility.</p>
+          <p class="card-cta">
+            <a href="#" class="btn btn-sm">View Project</a>
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; 2026 Tshepo Monareng. All rights reserved.</p>
     </div>
-    
-    <div>
-        <h2>Project 2</h2>
-        <img src="images/project2.jpg">
-        <p>An e-commerce site with modern design.</p>
-    </div>
-    
-    <!-- Third project missing -->
-    
-    <div class="footer">
-        <p>Contact me at email@example.com</p>
-    </div>
+  </footer>
+
 </body>
 </html>

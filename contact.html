@@ -1,30 +1,221 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Contact</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Get in touch with Tshepo Monareng for freelance projects, full-time opportunities, or collaborations." />
+  <title>Contact – Tshepo Monareng</title>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-    <div class="header">
-        <h1>Contact Me</h1>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header" aria-label="Site header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Home">Tshepo Monareng</a>
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="contact.html" class="nav-link active" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    
-    <div>
-        <h2>Get In Touch</h2>
-        
-        <form>
-            <input type="text" placeholder="Name">
-            <input type="text" placeholder="Email">
-            <textarea placeholder="Message"></textarea>
-            
-            <!-- Missing: labels, more input types, validation -->
-            
-            <button>Send</button>
-        </form>
+  </header>
+
+  <main class="container" role="main" id="main-content">
+
+    <section class="section" aria-labelledby="contact-title">
+      <h1 id="contact-title">Get In Touch</h1>
+      <p class="section-intro">Have a project in mind or want to collaborate? Fill in the form below and I'll get back to you as soon as possible.</p>
+
+      <form class="contact-form" action="#" method="post" novalidate aria-label="Contact form" id="contact-form">
+
+        <fieldset>
+          <legend>Your Details</legend>
+
+          <div class="form-row">
+            <label for="name">Full Name <span class="required" aria-hidden="true">*</span></label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              autocomplete="name"
+              required
+              minlength="2"
+              placeholder="Tshepo Monareng"
+              aria-required="true"
+              aria-describedby="name-error"
+            />
+            <span class="field-error" id="name-error" role="alert" aria-live="polite"></span>
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email Address <span class="required" aria-hidden="true">*</span></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              autocomplete="email"
+              required
+              placeholder="tshepo@example.com"
+              pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+              aria-required="true"
+              aria-describedby="email-error"
+            />
+            <span class="field-error" id="email-error" role="alert" aria-live="polite"></span>
+          </div>
+
+          <div class="form-row">
+            <label for="phone">Phone Number <span class="optional">(optional)</span></label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              autocomplete="tel"
+              placeholder="+27 00 000 0000"
+              pattern="[\+0-9\s\-]{7,15}"
+              aria-describedby="phone-hint"
+            />
+            <span class="field-hint" id="phone-hint">Format: +27 00 000 0000</span>
+          </div>
+
+          <div class="form-row">
+            <label for="website">Your Website <span class="optional">(optional)</span></label>
+            <input
+              type="url"
+              id="website"
+              name="website"
+              autocomplete="url"
+              placeholder="https://yoursite.com"
+            />
+          </div>
+
+          <div class="form-row">
+            <label for="dob">Availability From <span class="optional">(optional)</span></label>
+            <input
+              type="date"
+              id="dob"
+              name="availability"
+              aria-describedby="dob-hint"
+            />
+            <span class="field-hint" id="dob-hint">When would you like the project to start?</span>
+          </div>
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Your Enquiry</legend>
+
+          <div class="form-row">
+            <label for="subject">Subject <span class="required" aria-hidden="true">*</span></label>
+            <select id="subject" name="subject" required aria-required="true" aria-describedby="subject-error">
+              <option value="" disabled selected>Select a topic…</option>
+              <option value="freelance">Freelance project</option>
+              <option value="fulltime">Full-time opportunity</option>
+              <option value="collaboration">Collaboration</option>
+              <option value="other">Other</option>
+            </select>
+            <span class="field-error" id="subject-error" role="alert" aria-live="polite"></span>
+          </div>
+
+          <fieldset class="nested-fieldset">
+            <legend>Preferred contact method</legend>
+            <div class="radio-group">
+              <label class="radio-label">
+                <input type="radio" name="contact_pref" value="email" checked />
+                Email
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="contact_pref" value="phone" />
+                Phone
+              </label>
+            </div>
+          </fieldset>
+
+          <div class="form-row">
+            <label for="services">Services Interested In <span class="optional">(optional)</span></label>
+            <div class="checkbox-group" role="group" aria-label="Services">
+              <label class="checkbox-label"><input type="checkbox" name="services" value="frontend" /> Front-end Development</label>
+              <label class="checkbox-label"><input type="checkbox" name="services" value="design" /> UI/UX Design</label>
+              <label class="checkbox-label"><input type="checkbox" name="services" value="accessibility" /> Accessibility Audit</label>
+              <label class="checkbox-label"><input type="checkbox" name="services" value="consulting" /> Consulting</label>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message <span class="required" aria-hidden="true">*</span></label>
+            <textarea
+              id="message"
+              name="message"
+              required
+              minlength="20"
+              placeholder="Tell me about your project or just say hello…"
+              aria-required="true"
+              aria-describedby="message-error message-hint"
+            ></textarea>
+            <span class="field-hint" id="message-hint">Minimum 20 characters.</span>
+            <span class="field-error" id="message-error" role="alert" aria-live="polite"></span>
+          </div>
+
+        </fieldset>
+
+        <div class="form-actions">
+          <button type="submit" class="btn">Send Message</button>
+        </div>
+
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; 2026 Tshepo Monareng. All rights reserved.</p>
     </div>
-    
-    <div class="footer">
-        <p>Contact me at email@example.com</p>
-    </div>
+  </footer>
+
+  <script>
+    /* Accessible inline validation */
+    const form = document.getElementById('contact-form');
+    const fields = [
+      { id: 'name', errorId: 'name-error', msg: 'Please enter your full name (at least 2 characters).' },
+      { id: 'email', errorId: 'email-error', msg: 'Please enter a valid email address.' },
+      { id: 'subject', errorId: 'subject-error', msg: 'Please select a subject.' },
+      { id: 'message', errorId: 'message-error', msg: 'Please enter a message (at least 20 characters).' },
+    ];
+
+    function validateField(field) {
+      const input = document.getElementById(field.id);
+      const error = document.getElementById(field.errorId);
+      if (!input.validity.valid) {
+        error.textContent = field.msg;
+        input.setAttribute('aria-invalid', 'true');
+        return false;
+      } else {
+        error.textContent = '';
+        input.removeAttribute('aria-invalid');
+        return true;
+      }
+    }
+
+    fields.forEach(field => {
+      const input = document.getElementById(field.id);
+      input.addEventListener('blur', () => validateField(field));
+    });
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      const allValid = fields.every(field => validateField(field));
+      if (allValid) {
+        const btn = form.querySelector('button[type="submit"]');
+        btn.textContent = 'Message Sent!';
+        btn.disabled = true;
+      }
+    });
+  </script>
+
 </body>
 </html>
